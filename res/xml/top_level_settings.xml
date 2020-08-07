@@ -39,6 +39,13 @@
         settings:controller="com.android.settings.connecteddevice.TopLevelConnectedDevicesPreferenceController"/>
 
     <Preference
+        android:key="top_level_quest_settings"
+        android:title="@string/quest_entry"
+        android:icon="@drawable/ic_home_quest"
+        android:order="-105"
+        android:fragment="io.ahquest.settings.QuestEntrySettings"/>
+
+    <Preference
         android:key="top_level_apps_and_notifs"
         android:title="@string/app_and_notification_dashboard_title"
         android:summary="@string/app_and_notification_dashboard_summary"

@@ -33,6 +33,8 @@
     *** get*();
 }
 
+-keep class io.ahquest.settings.**
+
 # Keep classes that may be inflated from XML.
 -keepclasseswithmembers class * {
     public <init>(android.content.Context, android.util.AttributeSet);

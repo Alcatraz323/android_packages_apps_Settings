@@ -3291,6 +3291,22 @@
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
                 android:value="com.android.settings.gestures.GlobalActionsPanelSettings" />
         </activity>
+        
+        <activity android:name=".Settings$QuestEntrySettingsActivity"
+            android:label="@string/quest_entry"
+            android:icon="@drawable/ic_home_quest"
+            android:parentActivityName="com.android.settings">
+            <intent-filter android:priority="69">
+                <action android:name="com.android.settings.QUEST_SETTINGS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.android.settings.SHORTCUT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="io.ahquest.settings.QuestEntrySettings" />
+        </activity>
 
         <!-- This is the longest AndroidManifest.xml ever. -->
     </application>
